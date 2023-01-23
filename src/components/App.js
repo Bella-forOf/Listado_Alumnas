@@ -73,7 +73,7 @@ function App() {
   return (
     <div>
       <header className="header">
-        <h1 className="header__title">Bootcamp de programación web </h1>
+        <h1 className="header__title">Bootcamp de programación Web </h1>
         </header>
         <section>
         <h3>Con nosotr@s aprenderas las siguientes habilidades</h3>
