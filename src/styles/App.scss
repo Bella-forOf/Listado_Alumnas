@@ -1,0 +1,66 @@
+.header {
+  background-image: url(./../img/mujer.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 400px;
+  display: flex;
+
+  align-items: flex-end;
+}
+.header__title {
+  color: black;
+  text-transform: uppercase;
+}
+.table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  border: black 3px solid;
+}
+.social {
+  text-align: center;
+}
+.form {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  padding: 20px;
+}
+.tr {
+  border: black 3px solid;
+  padding: 10px;
+}
+.div_ocult {
+  display: none;
+}
+.new-contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.new-contact__input {
+  width: 50%;
+  padding: 10px;
+}
+.new-contact__btn {
+  margin: 30px;
+}
+.new-contact__title {
+  text-align: center;
+  padding-top: 50px;
+}
+.info {
+  text-align: center;
+  border: black 5px solid;
+}
+.info_text {
+  padding: 30px;
+}
+.btn {
+  text-align: center;
+}
+.select {
+  margin-bottom: 20px;
+}
