@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import getAdalabers from '../../src/services/apiadalabers';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('colapsable');
   const [data, setData] = useState([]);
   const [search, setSearchs] = useState('Todos');
   const [searchInput, setSearchsInput] = useState('');
@@ -45,6 +46,15 @@ function App() {
   };
   const handleSearchInput = (ev) => {
     setSearchsInput(ev.target.value);
+  };
+
+  const handleClickTable = () => {
+
+    setActiveSection('')
+  };
+  const handleClickOffTable = () => {
+
+    setActiveSection('colapsable')
   };
   // RENDER
   const htmlData2 = data
@@ -90,11 +100,12 @@ function App() {
       
       <p className='info_text'> A continuacion te presentamos el listado de alumnas y tendras la posibilidad de filtrarlas por nombre e incluso por tutor. Tambien tendras la posibilidad de añadir una nueva alumna, asignarle un tutor y una especialidad</p>
       <div className='btn'>
-      <button className='btn'>Mostrar alumnas</button>
+      <button className='btn' onClick={handleClickTable}>Mostrar alumnas</button>
+      <button className='btn' onClick={handleClickOffTable}>Ocultar alumnas</button>
       </div>
      
         </section>
-        <div className='div_ocult'>
+        <div className={`${activeSection}`}>
        <h4 className='social'> Filtrado de alumnas</h4>
       
       <form className="form" onSubmit={handleOnsubmit}>
@@ -185,7 +196,9 @@ function App() {
         />
       </form>
       </div>
-       
+      <footer class="footer">
+      <h3 class="subtittle">&copy; Bella Garcia Villegas 2022</h3>
+    </footer>
     </div>
   );
 }

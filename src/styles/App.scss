@@ -32,8 +32,9 @@
 .tr {
   border: black 3px solid;
   padding: 10px;
+  margin-top: 80px;
 }
-.div_ocult {
+.colapsable {
   display: none;
 }
 .new-contact__form {
@@ -60,7 +61,29 @@
 }
 .btn {
   text-align: center;
+  padding: 10px;
+  margin: 10px;
 }
 .select {
   margin-bottom: 20px;
+}
+.footer {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 60px;
+}
+@media all and (min-width: 768px) {
+  .header {
+    background-size: cover;
+    background-position: 20%;
+    height: 700px;
+    display: flex;
+
+    align-items: flex-end;
+  }
 }
