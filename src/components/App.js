@@ -122,7 +122,7 @@ function App() {
             value={searchInput}
           />
           <label className="label" htmlFor="counselor">
-            Elige tutor
+            Elige tutor o tutora
           </label>
           <select
             className="select"
